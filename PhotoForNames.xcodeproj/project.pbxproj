@@ -11,6 +11,11 @@
 		7A2193A92C6BCEB0004734BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2193A82C6BCEB0004734BB /* ContentView.swift */; };
 		7A2193AB2C6BCEB1004734BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2193AA2C6BCEB1004734BB /* Assets.xcassets */; };
 		7A2193AE2C6BCEB1004734BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2193AD2C6BCEB1004734BB /* Preview Assets.xcassets */; };
+		7A2193B52C6BCEF1004734BB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2193B42C6BCEF1004734BB /* Person.swift */; };
+		7A2193B92C6BD5F6004734BB /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2193B82C6BD5F6004734BB /* AddPersonView.swift */; };
+		7A2193BB2C6BF158004734BB /* AddPersonView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2193BA2C6BF158004734BB /* AddPersonView-ViewModel.swift */; };
+		7A2193BD2C6BF8C2004734BB /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2193BC2C6BF8C2004734BB /* PersonDetailView.swift */; };
+		7A2193BF2C6D2453004734BB /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2193BE2C6D2453004734BB /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		7A2193A82C6BCEB0004734BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A2193AA2C6BCEB1004734BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2193AD2C6BCEB1004734BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A2193B42C6BCEF1004734BB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7A2193B82C6BD5F6004734BB /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
+		7A2193BA2C6BF158004734BB /* AddPersonView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddPersonView-ViewModel.swift"; sourceTree = "<group>"; };
+		7A2193BC2C6BF8C2004734BB /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		7A2193BE2C6D2453004734BB /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		7A2193C02C6D24C2004734BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,8 @@
 		7A21939A2C6BCEB0004734BB = {
 			isa = PBXGroup;
 			children = (
+				7A2193BE2C6D2453004734BB /* LocationFetcher.swift */,
+				7A2193BC2C6BF8C2004734BB /* PersonDetailView.swift */,
 				7A2193A52C6BCEB0004734BB /* PhotoForNames */,
 				7A2193A42C6BCEB0004734BB /* Products */,
 			);
@@ -51,8 +64,12 @@
 		7A2193A52C6BCEB0004734BB /* PhotoForNames */ = {
 			isa = PBXGroup;
 			children = (
+				7A2193C02C6D24C2004734BB /* Info.plist */,
 				7A2193A62C6BCEB0004734BB /* PhotoForNamesApp.swift */,
 				7A2193A82C6BCEB0004734BB /* ContentView.swift */,
+				7A2193B82C6BD5F6004734BB /* AddPersonView.swift */,
+				7A2193B42C6BCEF1004734BB /* Person.swift */,
+				7A2193BA2C6BF158004734BB /* AddPersonView-ViewModel.swift */,
 				7A2193AA2C6BCEB1004734BB /* Assets.xcassets */,
 				7A2193AC2C6BCEB1004734BB /* Preview Content */,
 			);
@@ -137,7 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2193B52C6BCEF1004734BB /* Person.swift in Sources */,
+				7A2193B92C6BD5F6004734BB /* AddPersonView.swift in Sources */,
 				7A2193A92C6BCEB0004734BB /* ContentView.swift in Sources */,
+				7A2193BF2C6D2453004734BB /* LocationFetcher.swift in Sources */,
+				7A2193BB2C6BF158004734BB /* AddPersonView-ViewModel.swift in Sources */,
+				7A2193BD2C6BF8C2004734BB /* PersonDetailView.swift in Sources */,
 				7A2193A72C6BCEB0004734BB /* PhotoForNamesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +294,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoForNames/Preview Content\"";
+				DEVELOPMENT_TEAM = PG6V5L8R8P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoForNames/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need to access location for the person\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +327,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoForNames/Preview Content\"";
+				DEVELOPMENT_TEAM = PG6V5L8R8P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoForNames/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"We need to access location for the person\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
